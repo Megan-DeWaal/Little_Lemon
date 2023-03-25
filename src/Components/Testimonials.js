@@ -1,3 +1,5 @@
+import { ImageAssets } from "../assets/ImageAssets";
+
 function Testimonials() {
     const ratings = [
         {rating: "5",
@@ -20,7 +22,7 @@ function Testimonials() {
                 <article key={i}>
                     <h4>Rating</h4>
                     <h4>{item.rating}</h4>
-                    <img src="star.png"></img>
+                    <img src={ImageAssets.star}></img>
                     <h5>{item.name}</h5>
                     <p>{item.comment}</p>
                 </article>

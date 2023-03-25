@@ -5,7 +5,7 @@ import Reservations from "./Reservations";
 import OrderOnline from "./OrderOnline";
 import Login from "./Login";
 
-import { Routes, Route, Link } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 
 function Main() {
     return (

@@ -1,4 +1,5 @@
 import Hero from "./Hero";
+import { ImageAssets } from "../assets/ImageAssets";
 import {useState} from "react";
 
 
@@ -47,7 +48,7 @@ function Reservations() {
             <form onSubmit={handleSubmit}>
                 <fieldset>
                     <section>
-                        <img src="./images/tables.png"></img>
+                        <img src={ImageAssets.restaurant}></img>
                         <h1>Reserve A Table</h1>
                         <div className="Field">
                             <label>Date</label>
@@ -133,7 +134,7 @@ function Reservations() {
                                 }}
                             />
                         </div>
-                        <img src="./images/tray.png"></img>
+                        <img src={ImageAssets.food}></img>
                         <button type="submit" disabled={!getIsFormValid}>Submit Reservation</button>
                     </section>
                 </fieldset>

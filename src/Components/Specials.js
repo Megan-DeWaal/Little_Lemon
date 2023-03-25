@@ -1,14 +1,16 @@
+import { ImageAssets } from "../assets/ImageAssets";
+
 function Specials() {
     const items = [
-        {image: "./images/greeksalad.png",
+        {image: ImageAssets.greeksalad,
         name: "Greek Salad",
         price: 12.95,
         description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. "},
-        {image: "./images/bruchetta.png",
+        {image: ImageAssets.bruchetta,
         name: "Bruchetta",
         price: 5.95,
         description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. "},
-        {image: "./images/lemondessert.png",
+        {image: ImageAssets.lemondessert,
         name: "Lemon Dessert",
         price: 12.95,
         description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. "},

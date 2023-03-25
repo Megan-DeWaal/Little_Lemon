@@ -1,9 +1,10 @@
-import { Routes, Route, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
+import { ImageAssets } from "../assets/ImageAssets";
 
 function Footer() {
     return (
         <>
-            <img src="logo2.png"></img>
+            <img src={ImageAssets.logo2}></img>
             <ul>
             <li><Link to="/" className="nav-item">Home</Link></li>
                 <li><Link to="/about" className="nav-item">About</Link></li>
@@ -18,10 +19,10 @@ function Footer() {
                 <li>Email</li>
             </ul>
             <ul>
-                <li><img src="facebook.png"></img></li>
-                <li><img src="instagram.png"></img></li>
-                <li><img src="twitter.png"></img></li>
-                <li><img src="youtube.png"></img></li>
+                <li><img src={ImageAssets.facebook}></img></li>
+                <li><img src={ImageAssets.instagram}></img></li>
+                <li><img src={ImageAssets.twitter}></img></li>
+                <li><img src={ImageAssets.youtube}></img></li>
             </ul>
         </>
         

@@ -1,0 +1,18 @@
+export const ImageAssets = {
+    hamburger: require('./hamburger.png'),
+    basket: require('./basket.png'),
+    bruchetta: require('./bruchetta.png'),
+    greeksalad: require('./greek salad.jpg'),
+    lemondessert: require('./lemon dessert.jpg'),
+    logo1: require('./logo1.png'),
+    logo2: require('./logo2.png'),
+    MarioandAdrian: require('./greek salad.jpg'),
+    restaurant: require('./restaurant.jpg'),
+    chef: require('./restaurantchef.jpg'),
+    food: require('./restaurantfood.jpg'),
+    facebook: require('./facebook.png'),
+    instagram: require('./instagram.png'),
+    twitter: require('./twitter.png'),
+    youtube: require('./youtube.png'),
+    star: require('./star.png'),
+};

@@ -1,4 +1,5 @@
-import { Routes, Route, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
+import { ImageAssets } from "../assets/ImageAssets";
 
 function Hero(props) {
     return (
@@ -12,7 +13,7 @@ function Hero(props) {
                 et dolore magna aliqua. 
             </p>
             <button><Link to={props.link} className="nav-item">{props.prompt}</Link></button>
-            <img src="./images/chef.png"></img>
+            <img src={ImageAssets.chef}></img>
         </>
     )
 }

@@ -1,3 +1,5 @@
+import { ImageAssets } from "../assets/ImageAssets";
+
 function About() {
     return(
         <>
@@ -12,7 +14,7 @@ function About() {
                 est pellentesque elit ullamcorper
                 dignissim.
             </p>
-            <img src="./images/aboutus.png"></img>
+            <img src={ImageAssets.MarioandAdrian}></img>
         </>
     );
 }

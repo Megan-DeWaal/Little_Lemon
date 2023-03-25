@@ -1,9 +1,10 @@
 import Nav from "./Nav";
+import { ImageAssets } from "../assets/ImageAssets";
 
 function Header() {
     return (
         <>
-            <img src="logo1.png"></img>
+            <img src={ImageAssets.logo1}></img>
             <Nav></Nav>
         </>
     );
