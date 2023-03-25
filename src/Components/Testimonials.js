@@ -17,17 +17,22 @@ function Testimonials() {
     ]
 
     return (
-        <>
-            {ratings.map((item, i) => (
-                <article key={i}>
-                    <h4>Rating</h4>
-                    <h4>{item.rating}</h4>
-                    <img src={ImageAssets.star}></img>
-                    <h5>{item.name}</h5>
-                    <p>{item.comment}</p>
-                </article>
-            ))}
-        </>
+        <div className="ratings">
+            <h1>Testimonials</h1>
+            <div>
+                {ratings.map((item, i) => (
+                    <article key={i}>
+                        <h4>Rating</h4>
+                        <div>
+                            <h4>{item.rating}</h4>
+                            <img src={ImageAssets.star} className="star"></img>
+                            <h5>{item.name}</h5>
+                        </div>
+                        <p>{item.comment}</p>
+                    </article>
+                ))}
+            </div>
+        </div>
     )
 }
 

@@ -17,19 +17,27 @@ function Specials() {
     ]
 
     return (
-        <>
-            <h1>Specials</h1>
-            <button>Online Menu</button>
-            {items.map((item, i) => (
-                <article key={i}>
-                    <img src={item.image}></img>
-                    <h3>{item.name}</h3>
-                    <h4>${item.price}</h4>
-                    <p>{item.description}</p>
-                    <h4>Order A Delivery</h4>
-                </article>
-            ))}
-        </>
+        <div className="specials">
+            <div>
+                <h1>Specials</h1>
+                <button className="menubutton">Online Menu</button>
+            </div>
+            <div>
+                {items.map((item, i) => (
+                    <article key={i}>
+                        <img src={item.image} className="himage"></img>
+                        <div className="specialstext">
+                            <div className="dishnameline">
+                                <h3>{item.name}</h3>
+                                <h4 className="price">${item.price}</h4>
+                            </div>
+                            <p>{item.description}</p>
+                            <h4>Order A Delivery</h4>
+                        </div>
+                    </article>
+                ))}
+            </div>
+        </div>
     )
 }
 

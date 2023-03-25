@@ -6,7 +6,7 @@ export const ImageAssets = {
     lemondessert: require('./lemon dessert.jpg'),
     logo1: require('./logo1.png'),
     logo2: require('./logo2.png'),
-    MarioandAdrian: require('./greek salad.jpg'),
+    MarioandAdrian: require('./MarioandAdrian.jpg'),
     restaurant: require('./restaurant.jpg'),
     chef: require('./restaurantchef.jpg'),
     food: require('./restaurantfood.jpg'),

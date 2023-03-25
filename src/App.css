@@ -7,6 +7,210 @@
   pointer-events: none;
 }
 
+/* Images */
+
+.logo1 {
+  padding: 1vw;
+  width: 16vw;
+  height: auto;
+}
+
+.logo2 {
+  width: 7vw;
+  height: auto;
+}
+
+.star {
+  width: 1vw;
+  height: 1vw;
+  align-self: center;
+}
+
+.icon {
+  width: 2vw;
+  height: 2vw;
+}
+
+.himage {
+  width: 25vw;
+  height: 17vw;
+  border: 1px solid black;
+  border-top-right-radius: 16px;
+  border-top-left-radius: 16px;
+}
+
+.vimage {
+  height: 17vw;
+  width: 25vw;
+  border: 1px solid black;
+  border-top-right-radius: 16px;
+  border-top-left-radius: 16px;
+}
+
+.roundedimage {
+  border-radius: 16px;
+}
+
+/* General */
+
+li {
+  list-style: none;
+}
+
+button {
+  background-color: #F4CE14;
+  width: 10vw;
+  height: 3vw;
+  border-radius: 16px;
+}
+
+/* Header */
+
+.header {
+  display: flex;
+  position: sticky;
+  top: 0;
+  background-color: white;
+  align-items: center;
+}
+
+.topNav {
+  width: 70vw;
+  margin-right: 3vw;
+  margin-left: auto;
+}
+
+.topNav ul {
+  display: flex;
+  float: right;
+}
+
+.topNav li {
+  display: inline;
+  padding: 1vw;
+}
+
+/* Hero */
+
+.hero {
+  background-color: #495E57;
+  display: flex;
+  padding: 2vw;
+  padding-left: 10vw;
+  align-items: center;
+}
+
+.hero div {
+  width: 30vw;
+  padding-right: 5vw;
+}
+
+/* Specials */
+
+.specials > div{
+  display: flex;
+  padding: 2vw;
+  padding-left: 10vw;
+  align-items: baseline;
+}
+
+.specials article {
+  background-color: #EDEFEE;
+  margin-left: 2vw;
+  margin-right: 2vw;
+  width: 25vw;
+  border-radius: 16px;
+  border: 1px solid black;
+}
+
+.specials img {
+  border: none;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+}
+
+.menubutton {
+  margin-left: 50vw;
+}
+
+.specials .dishnameline {
+  display: flex;
+  padding: 0vw;
+}
+
+.price {
+  margin-left: 10vw;
+}
+
+.specialstext {
+  padding: 2vw;
+}
+
+/* Testimonials */
+
+.ratings {
+  background-color: #FBDABB;
+}
+
+.ratings h1 {
+  text-align: center;
+  padding-top: 3vw;
+}
+
+.ratings > div {
+  display: flex;
+  margin-left: 10vw;
+  margin-right: 10vw;
+}
+
+.ratings article {
+  margin: 2vw;
+  padding: 2vw;
+  background-color: white;
+  border-radius: 16px;
+  border: 1px solid black;
+}
+
+.ratings article div {
+  display: flex;
+}
+
+/* About */
+
+.about {
+  background-color: #495E57;
+  display: flex;
+  padding: 2vw;
+  padding-left: 10vw;
+  align-items: center;
+}
+
+.about div {
+  width: 30vw;
+  padding-right: 5vw;
+}
+
+/* Footer */
+
+.footer {
+  display: flex;
+  align-items: center;
+  margin: auto;
+  width: fit-content;
+}
+
+.footer .logo2 {
+  padding: 4vw;
+}
+
+.footer ul {
+  padding: 4vw;
+}
+
+.footer img {
+  padding: 0.3vw;
+}
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;

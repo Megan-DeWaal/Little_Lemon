@@ -48,7 +48,7 @@ function Reservations() {
             <form onSubmit={handleSubmit}>
                 <fieldset>
                     <section>
-                        <img src={ImageAssets.restaurant}></img>
+                        <img src={ImageAssets.restaurant} className="vimage roundedimage"></img>
                         <h1>Reserve A Table</h1>
                         <div className="Field">
                             <label>Date</label>
@@ -134,7 +134,7 @@ function Reservations() {
                                 }}
                             />
                         </div>
-                        <img src={ImageAssets.food}></img>
+                        <img src={ImageAssets.food} className="vimage roundedimage"></img>
                         <button type="submit" disabled={!getIsFormValid}>Submit Reservation</button>
                     </section>
                 </fieldset>

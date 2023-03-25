@@ -3,10 +3,10 @@ import { ImageAssets } from "../assets/ImageAssets";
 
 function Header() {
     return (
-        <>
-            <img src={ImageAssets.logo1}></img>
+        <div className="header">
+            <img src={ImageAssets.logo1} className="logo1"></img>
             <Nav></Nav>
-        </>
+        </div>
     );
 }
 
