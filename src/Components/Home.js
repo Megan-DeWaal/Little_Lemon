@@ -6,7 +6,7 @@ import About from "./About";
 function Home() {
     return (
         <>
-            <Hero prompt={"Reserve A Table"} link={"/reservations"}></Hero>
+            <Hero prompt="Reserve A Table" link="/reservations"></Hero>
             <Specials></Specials>
             <Testimonials></Testimonials>
             <About></About>

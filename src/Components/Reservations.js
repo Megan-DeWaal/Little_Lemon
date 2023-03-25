@@ -82,10 +82,10 @@ function Reservations() {
                         <div className="Field">
                             <label>Occasion</label>
                             <select value={occasion} onChange={(e) => setOccasion(e.target.value)}>
-                                <option value="Birthday"></option>
-                                <option value="Birthday"></option>
-                                <option value="Engagement"></option>
-                                <option value="Anniversary"></option>
+                                <option value="general">General</option>
+                                <option value="birthday">Birthday</option>
+                                <option value="engagement">Engagement</option>
+                                <option value="anniversary">Anniversary</option>
                             </select>
                         </div>
                     </section>
@@ -117,6 +117,7 @@ function Reservations() {
                             <input 
                                 type="tel" 
                                 value={phoneNumber} 
+                                placeholder="Phone Number"
                                 pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}"
                                 onChange={(e) => {setPhoneNumber(e.target.value);
                                 }}
@@ -127,6 +128,7 @@ function Reservations() {
                             <input 
                                 type="email" 
                                 value={email} 
+                                placeholder="Email"
                                 onChange={(e) => {setEmail(e.target.value);
                                 }}
                             />
@@ -140,4 +142,4 @@ function Reservations() {
     )
 }
 
-export default Reservations;
+export default Reservations; 
