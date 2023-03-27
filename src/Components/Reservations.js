@@ -59,6 +59,7 @@ function Reservations() {
                                             type="date" 
                                             value={date} 
                                             placeholder="- - / - - / - - - -"
+                                            required
                                             onChange={(e) => {setDate(e.target.value);
                                             }}
                                         />
@@ -69,6 +70,7 @@ function Reservations() {
                                             type="time" 
                                             value={time} 
                                             placeholder="- - : - -"
+                                            required
                                             onChange={(e) => {setTime(e.target.value);
                                             }}
                                         />
@@ -81,6 +83,7 @@ function Reservations() {
                                             type="number" 
                                             value={numberDiners} 
                                             placeholder="1"
+                                            required
                                             onChange={(e) => {setNumberDiners(e.target.value);
                                             }}
                                         />
@@ -108,6 +111,7 @@ function Reservations() {
                                             type="text" 
                                             value={firstName} 
                                             placeholder="First Name"
+                                            required
                                             onChange={(e) => {setFirstName(e.target.value);
                                             }}
                                         />
@@ -118,7 +122,8 @@ function Reservations() {
                                             type="tel" 
                                             value={phoneNumber} 
                                             placeholder="Phone Number"
-                                            pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}"
+                                            pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                                            required
                                             onChange={(e) => {setPhoneNumber(e.target.value);
                                             }}
                                         />
@@ -131,6 +136,7 @@ function Reservations() {
                                             type="text" 
                                             value={lastName} 
                                             placeholder="Last Name"
+                                            required
                                             onChange={(e) => {setLastName(e.target.value);
                                             }}
                                         />
@@ -142,6 +148,7 @@ function Reservations() {
                                             type="email" 
                                             value={email} 
                                             placeholder="Email"
+                                            required
                                             onChange={(e) => {setEmail(e.target.value);
                                             }}
                                         />
