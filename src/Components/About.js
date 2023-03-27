@@ -17,7 +17,7 @@ function About() {
                 </p>
             </div>
             <div>
-                <img src={ImageAssets.MarioandAdrian} className="himage roundedimage"></img>
+                <img src={ImageAssets.MarioandAdrian} alt="Mario and Adrian" className="himage roundedimage"></img>
             </div>
         </div>
     );

@@ -15,13 +15,13 @@ function Reservations() {
 
     const getIsFormValid = () => {
         return (
-            date &&
-            time &&
-            (numberDiners % 1 == 0) &&
-            firstName &&
-            lastName &&
-            phoneNumber &&
-            email
+            (date !== "") &&
+            (time !== "") &&
+            (numberDiners % 1 === 0) &&
+            (firstName !== "") &&
+            (lastName !== "") &&
+            (phoneNumber !== "") &&
+            (email !== "")
         )
     }
 
@@ -45,97 +45,112 @@ function Reservations() {
     return (
         <>
             <Hero prompt="Online Menu" link="/menu"></Hero>
-            <form onSubmit={handleSubmit}>
+            <form onSubmit={handleSubmit} className="form">
                 <fieldset>
-                    <section>
-                        <img src={ImageAssets.restaurant} className="vimage roundedimage"></img>
-                        <h1>Reserve A Table</h1>
-                        <div className="Field">
-                            <label>Date</label>
-                            <input 
-                                type="date" 
-                                value={date} 
-                                placeholder="- - / - - / - - - -"
-                                onChange={(e) => {setDate(e.target.value);
-                                }}
-                            />
-                        </div>
-                        <div className="Field">
-                            <label>Time</label>
-                            <input 
-                                type="time" 
-                                value={time} 
-                                placeholder="- - : - -"
-                                onChange={(e) => {setTime(e.target.value);
-                                }}
-                            />
-                        </div>
-                        <div className="Field">
-                            <label>Number of Diners</label>
-                            <input 
-                                type="number" 
-                                value={numberDiners} 
-                                placeholder="1"
-                                onChange={(e) => {setNumberDiners(e.target.value);
-                                }}
-                            />
-                        </div>
-                        <div className="Field">
-                            <label>Occasion</label>
-                            <select value={occasion} onChange={(e) => setOccasion(e.target.value)}>
-                                <option value="general">General</option>
-                                <option value="birthday">Birthday</option>
-                                <option value="engagement">Engagement</option>
-                                <option value="anniversary">Anniversary</option>
-                            </select>
-                        </div>
+                    <section className="reservetable">
+                        <img src={ImageAssets.restaurant} alt="tables" className="vimage roundedimage"></img>
+                        <div>
+                            <h1 className="black">Reserve A Table</h1>
+                            <div className="inputsections">
+                                <div>
+                                    <div className="Field">
+                                        <label>Date</label>
+                                        <input 
+                                            type="date" 
+                                            value={date} 
+                                            placeholder="- - / - - / - - - -"
+                                            onChange={(e) => {setDate(e.target.value);
+                                            }}
+                                        />
+                                    </div>
+                                    <div className="Field">
+                                        <label>Time</label>
+                                        <input 
+                                            type="time" 
+                                            value={time} 
+                                            placeholder="- - : - -"
+                                            onChange={(e) => {setTime(e.target.value);
+                                            }}
+                                        />
+                                    </div>
+                                </div>
+                                <div>
+                                    <div className="Field">
+                                        <label>Number of Diners</label>
+                                        <input 
+                                            type="number" 
+                                            value={numberDiners} 
+                                            placeholder="1"
+                                            onChange={(e) => {setNumberDiners(e.target.value);
+                                            }}
+                                        />
+                                    </div>
+                                    <div className="Field">
+                                        <select value={occasion} onChange={(e) => setOccasion(e.target.value)}>
+                                            <option value="occasion">Occasion</option>
+                                            <option value="birthday">Birthday</option>
+                                            <option value="engagement">Engagement</option>
+                                            <option value="anniversary">Anniversary</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            </div>
                     </section>
-                    <section>
-                        
-                        <h1>Contact Information</h1>
-                        <div className="Field">
-                            <label>First Name</label>
-                            <input 
-                                type="text" 
-                                value={firstName} 
-                                placeholder="First Name"
-                                onChange={(e) => {setFirstName(e.target.value);
-                                }}
-                            />
+                    <section className="contactinfo">
+                        <div>
+                            <h1>Contact Information</h1>
+                            <div className="inputsections">
+                                <div>
+                                    <div className="Field">
+                                        <label>First Name</label>
+                                        <input 
+                                            type="text" 
+                                            value={firstName} 
+                                            placeholder="First Name"
+                                            onChange={(e) => {setFirstName(e.target.value);
+                                            }}
+                                        />
+                                    </div>
+                                    <div className="Field">
+                                        <label>Phone Number</label>
+                                        <input 
+                                            type="tel" 
+                                            value={phoneNumber} 
+                                            placeholder="Phone Number"
+                                            pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}"
+                                            onChange={(e) => {setPhoneNumber(e.target.value);
+                                            }}
+                                        />
+                                    </div>
+                                </div>
+                                <div>
+                                    <div className="Field">
+                                        <label>Last Name</label>
+                                        <input 
+                                            type="text" 
+                                            value={lastName} 
+                                            placeholder="Last Name"
+                                            onChange={(e) => {setLastName(e.target.value);
+                                            }}
+                                        />
+                                    </div>
+                                    
+                                    <div className="Field">
+                                        <label>Email</label>
+                                        <input 
+                                            type="email" 
+                                            value={email} 
+                                            placeholder="Email"
+                                            onChange={(e) => {setEmail(e.target.value);
+                                            }}
+                                        />
+                                    </div>
+                                </div>
+                            </div>
+                            <button className="submit" type="submit" disabled={!getIsFormValid}>Submit Reservation</button>
                         </div>
-                        <div className="Field">
-                            <label>Last Name</label>
-                            <input 
-                                type="text" 
-                                value={lastName} 
-                                placeholder="Last Name"
-                                onChange={(e) => {setLastName(e.target.value);
-                                }}
-                            />
-                        </div>
-                        <div className="Field">
-                            <label>Phone Number</label>
-                            <input 
-                                type="tel" 
-                                value={phoneNumber} 
-                                placeholder="Phone Number"
-                                pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}"
-                                onChange={(e) => {setPhoneNumber(e.target.value);
-                                }}
-                            />
-                        </div>
-                        <div className="Field">
-                            <label>Email</label>
-                            <input 
-                                type="email" 
-                                value={email} 
-                                placeholder="Email"
-                                onChange={(e) => {setEmail(e.target.value);
-                                }}
-                            />
-                        </div>
-                        <img src={ImageAssets.food} className="vimage roundedimage"></img>
-                        <button type="submit" disabled={!getIsFormValid}>Submit Reservation</button>
+                        <img src={ImageAssets.food} alt="food" className="vimage roundedimage"></img>
                     </section>
                 </fieldset>
             </form>

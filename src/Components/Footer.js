@@ -4,7 +4,7 @@ import { ImageAssets } from "../assets/ImageAssets";
 function Footer() {
     return (
         <div className="footer">
-            <img src={ImageAssets.logo2} className="logo2"></img>
+            <img src={ImageAssets.logo2} alt="Little lemon logo" className="logo2"></img>
             <ul>
             <li><Link to="/" className="nav-item">Home</Link></li>
                 <li><Link to="/about" className="nav-item">About</Link></li>
@@ -19,10 +19,10 @@ function Footer() {
                 <li>Email</li>
             </ul>
             <ul>
-                <li><img src={ImageAssets.facebook} className="icon"></img></li>
-                <li><img src={ImageAssets.instagram} className="icon"></img></li>
-                <li><img src={ImageAssets.twitter} className="icon"></img></li>
-                <li><img src={ImageAssets.youtube} className="icon"></img></li>
+                <li><img src={ImageAssets.facebook} alt="facebook icon" className="icon"></img></li>
+                <li><img src={ImageAssets.instagram} alt="instagram icon" className="icon"></img></li>
+                <li><img src={ImageAssets.twitter} alt="twitter icon" className="icon"></img></li>
+                <li><img src={ImageAssets.youtube} alt="youtube icon" className="icon"></img></li>
             </ul>
         </div>
         

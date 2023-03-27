@@ -1,4 +1,5 @@
 import { ImageAssets } from "../assets/ImageAssets";
+import { Link } from "react-router-dom";
 
 function Specials() {
     const items = [
@@ -16,23 +17,23 @@ function Specials() {
         description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. "},
     ]
 
-    return (
+    return ( 
         <div className="specials">
             <div>
-                <h1>Specials</h1>
-                <button className="menubutton">Online Menu</button>
+                <h1 className="black">Specials</h1>
+                <button className="menubutton"> <Link to="/menu" className="nav-item">Online Menu</Link></button>
             </div>
             <div>
                 {items.map((item, i) => (
                     <article key={i}>
-                        <img src={item.image} className="himage"></img>
+                        <img src={item.image} alt="dish" className="himage"></img>
                         <div className="specialstext">
                             <div className="dishnameline">
                                 <h3>{item.name}</h3>
-                                <h4 className="price">${item.price}</h4>
+                                <h3 className="price">${item.price}</h3>
                             </div>
-                            <p>{item.description}</p>
-                            <h4>Order A Delivery</h4>
+                            <p className="black">{item.description}</p>
+                            <h3>Order A Delivery</h3>
                         </div>
                     </article>
                 ))}

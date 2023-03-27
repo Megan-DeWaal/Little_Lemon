@@ -7,6 +7,61 @@
   pointer-events: none;
 }
 
+/* Text */
+h1 {
+  color: #F4CE14;
+  font-family: 'Markanzi Text';
+  font-size: 4vw;
+  margin-top: 2vw;
+  margin-bottom: 2vw;
+}
+
+h2 {
+  color: white;
+  font-family: 'Markanzi Text';
+  font-size: 2.5vw;
+  margin-top: 1vw;
+  margin-bottom: 1vw;
+}
+
+h3 {
+  font-family: 'Markanzi Text';
+  font-size: 2vw;
+  margin-top: 1vw;
+  margin-bottom: 1vw;
+}
+
+h4 {
+  font-family: 'Markanzi Text';
+  font-size: 1.75vw;
+  margin-top: 1vw;
+  margin-bottom: 1vw;
+}
+
+p {
+  color: white;
+  font-family: 'karla';
+  font-size: 2vw;
+}
+
+.black {
+  color: black;
+}
+
+.nav-item {
+  font-family: 'Markanzi Text';
+  font-size: 1.5vw;
+  margin-top: 1vw;
+  margin-bottom: 1vw;
+}
+
+button, li, input, label, select, option {
+  font-family: 'Markanzi Text';
+  font-size: 1.5vw;
+  margin-top: 1vw;
+  margin-bottom: 1vw;
+}
+
 /* Images */
 
 .logo1 {
@@ -21,9 +76,11 @@
 }
 
 .star {
-  width: 1vw;
-  height: 1vw;
+  width: 2vw;
+  height: 2vw;
   align-self: center;
+  margin-left: 1vw;
+  margin-right: 1vw;
 }
 
 .icon {
@@ -40,8 +97,8 @@
 }
 
 .vimage {
-  height: 17vw;
-  width: 25vw;
+  height: 25vw;
+  width: 17vw;
   border: 1px solid black;
   border-top-right-radius: 16px;
   border-top-left-radius: 16px;
@@ -59,8 +116,8 @@ li {
 
 button {
   background-color: #F4CE14;
-  width: 10vw;
-  height: 3vw;
+  width: 16vw;
+  height: 4vw;
   border-radius: 16px;
 }
 
@@ -139,7 +196,7 @@ button {
 }
 
 .price {
-  margin-left: 10vw;
+  margin-left: 8vw;
 }
 
 .specialstext {
@@ -210,6 +267,101 @@ button {
 .footer img {
   padding: 0.3vw;
 }
+
+/* Reservations */
+
+form {
+  padding: 0vw;
+  margin: 0vw;
+}
+
+.form fieldset {
+  padding: 0vw;
+  width: 100vw;
+  margin: 0vw;
+}
+
+.reservetable {
+  background-color: #FBDABB;
+  margin: 0vw;
+  padding: 0vw;
+  display: flex;
+  padding: 2vw;
+  padding-left: 10vw;
+  align-items: center;
+}
+
+.reservetable > div {
+  padding-left: 5vw;
+}
+
+.inputsections {
+  display: flex;
+}
+
+
+.contactinfo {
+  background-color: #495E57;
+  margin: 0vw;
+  padding: 0vw;
+  display: flex;
+  padding: 2vw;
+  padding-left: 10vw;
+  align-items: center;
+}
+
+.contactinfo > div {
+  width: 30vw;
+  padding-right: 5vw;
+}
+
+.contactinfo img {
+  margin-left: 20vw;
+}
+
+.Field {
+  margin: 1vw;
+}
+
+.Field label {
+  background-color: #EDEFEE;
+  width: 20vw;
+  height: 3.5vw;
+  border-radius: 16px;
+  display: block;
+  text-align: center;
+  padding-top: 1.5vw;
+  border: 1px solid black;
+}
+
+.Field input {
+  background-color: white;
+  width: 20vw;
+  height: 5vw;
+  border-radius: 16px;
+  display: block;
+  text-align: center;
+}
+
+select {
+  background-color: #EDEFEE;
+  width: 20vw;
+  height: 5vw;
+  border-radius: 16px;
+  text-align: center;
+}
+
+option {
+  background-color: #EDEFEE;
+  width: 20vw;
+  height: 5vw;
+  border-radius: 16px;
+}
+
+.submit {
+  margin-left: 14vw;
+}
+
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {

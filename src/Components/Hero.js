@@ -16,7 +16,7 @@ function Hero(props) {
                 <button><Link to={props.link} className="nav-item">{props.prompt}</Link></button>
             </div>
             <div>
-                <img src={ImageAssets.chef} className="himage roundedimage"></img>
+                <img src={ImageAssets.chef} alt="chef" className="himage roundedimage"></img>
             </div>
         </div>
     )
